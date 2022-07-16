@@ -10,21 +10,8 @@
 
     <title>Read In</title>
     <link rel="stylesheet" href="style.css">
-   <link
-	rel="stylesheet"
-	href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-	/>
-	<link
-	rel="stylesheet"
-	href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-	/>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     </link>
-<style>
-				
-</style>
 </head>
 
 <body>
@@ -48,29 +35,114 @@
     
     
     
-    
-    
-    
     <div class="content clearfix">
-    				
     				<div class="main single">
             <h2 style="text-align:center;">Contact Us </h2>
             <p style="text-align:center;padding:10px;">Facing any issue. Just Tell us so we can help you.</p>
             
             
+    <iframe
+      id="JotFormIFrame-221962302135447"
+      title="General Inquiry Contact Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/221962302135447"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-221962302135447");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
             
-            <div><h1 style="height: 0px; text-align: center;"><span style="font-family: trebuchet;"><u>C</u><u>ontact US !</u></span></h1><div><br /></div><div><br /></div><h2 style="text-align: center;"><i>If you have any query regrading to Site, Advertisement and any other issue, please feel free to contact at&nbsp;</i><i>:-</i></h2><div><br /></div><div class="separator" style="clear: both; text-align: center;"><img border="0" data-original-height="500" data-original-width="500" height="128" src="https://1.bp.blogspot.com/-66ru4RgboG0/X0U9eSwb-WI/AAAAAAAAAoc/uKZTI_rTHSEVhc_jnjvG8Zrk93BlwsJhACLcBGAsYHQ/w128-h128/clipart2503239.png" width="128" /></div><div class="separator" style="clear: both; text-align: center;">Email:-</div><div class="separator" style="clear: both; text-align: center;"><br /></div><div style="text-align: center;"><span style="color: #3d85c6;">arqamiy2k2@gmail.com</span></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><br /></div><h3 style="text-align: center;"><i><u>We will Definitely reply to your Message As Soon as Possible</u></i></h3><div><i><u><br /></u></i></div><div><br /></div>	
-            
-            
-            
-            
-            
-           
         </div>
      
         <div class="single-sidebar">
         				
-        				
+        			   				
             <div class="section search">
                 <h2 class="section-title">Search</h2>
                 <form action="index.html" method="post"> <input type="text" name="search-term" class="text-input" placeholder="Search...."> </form>
@@ -92,9 +164,6 @@
         <h2>Read In</h2>
         <p>All Rights Reserved ©️ 2022</p>
     </div>
-    
-    
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -107,8 +176,7 @@
         
         })
         
-    </script> 
-   
+    </script> <!-- java -->
 </body>
 
 </html>
