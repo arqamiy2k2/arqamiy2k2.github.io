@@ -1,11 +1,11 @@
 
 @font-face {
 font-family: "popo";
-src: url("fonts/Poppins-Regular.otf");
+src: url("../fonts/Poppins-Regular.otf");
 }
 @font-face {
 font-family: "popo1";
-src: url("fonts/Poppins-SemiBold.otf");
+src: url("../fonts/Poppins-SemiBold.otf");
 }
 
 
