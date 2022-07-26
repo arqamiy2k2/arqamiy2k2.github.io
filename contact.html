@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" charset="UTF-8">
+    
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Read In</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    </link>
+</head>
+
+<body>
+    <!-- Header -->
+  <nav> <a href="#" onclick="openNav()"class="menu">
+        		<img src="img/menu.svg" alt="">		
+        </a>
+        <h1><a href="index.html">Read In</a></h1>
+         <li style="list-style: none;"> 
+    <img src="social/facebook.svg" alt="">
+    <img src="social/twitter.svg" alt="">
+    <img src="social/linkedin.svg" alt="">
+    <img src="social/instagram.svg" alt="">
+    </li>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            
+        </ul>
+       
+        <div style="clear:both;"></div>
+    </nav>
+    
+    
+    
+    <div id="sidenav" class="sidenav">
+    				
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="float:right;font-size:40px;">&times</a>
+    
+    <h1><a href="#">Read In</a></h1>
+    <li style="list-style: none;padding-left:50px;"> 
+    <img src="social/facebook.svg" alt="">
+    <img src="social/twitter.svg" alt="">
+    <img src="social/linkedin.svg" alt="">
+    <img src="social/instagram.svg" alt="">
+    </li>
+    <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            
+        </ul>
+  </div> <!-- Head -->
+    <!-- Content -->
+    
+    
+    
+    <div class="content clearfix">
+    				<div class="main single">
+            <h2 style="text-align:center;">Contact Us </h2>
+            <p style="text-align:center;padding:10px;">Facing any issue. Just Tell us so we can help you.</p>
+            
+            
+    <iframe
+      id="JotFormIFrame-221962302135447"
+      title="General Inquiry Contact Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/221962302135447"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-221962302135447");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+            
+        </div>
+     
+        <div class="single-sidebar">
+        				
+        			   				
+            <div class="section search">
+                <h2 class="section-title">Search</h2>
+                <form action="index.html" method="post"> <input type="text" name="search-term" class="text-input" placeholder="Search...."> </form>
+            </div>
+            <div class="section popular">
+            				<h2>Social Media</h2>
+            				<div class="post"> 
+    	<img style="width:40px;" src="social/facebook1.svg" alt="">
+    <img style="width:40px;" src="social/twitter1.svg" alt="">
+    <img style="width:40px;" src="social/linkedin1.svg" alt="">
+    <img style="width:40px;"src="social/instagram1.svg" alt="">
+    </div>
+            </div>
+            <div class="section topics">
+                <h2 class="section-title">Topics</h2>
+                <ul>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">RDP</a></li>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Content -->
+    <div class="footer" style="padding:20px;">
+        <h2>Read In</h2>
+        <p>All Rights Reserved ©️ 2022</p>
+    </div>
+ <script>
+function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("sidenav").style.display= "block";
+}
+
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("sidenav").style.display= "none";
+}
+</script> <!-- java -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+ 
